@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+.loginCardDiv {
+  padding-bottom: 10px;
+  background: white;
+  position: relative;
+  border: 1px solid white;
+  box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.28),
+    0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+  width: 30vw;
+  border-radius: 5px;
+}
+.mini-loginCardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 5%;
+  width: 27vw;
+  height: 25vh;
+
+  color: #fff;
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28),
+    0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+  border-radius: 5px;
+}
+
+.mini-loginCardDiv-heading {
+  color: white !important;
+  font-size: 1.8em !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.loginCardDiv-textDiv {
+  padding: 0px 30px;
+  margin: 19vh 0 0 0;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textDiv-tagline {
+  margin-top: 10px !important;
+  color: grey !important;
+  /* font-style: italic !important; */
+}
+
+.PhoneNo-div {
+  display: flex;
+  flex-direction: column !important;
+}
+
+#standard-number {
+  text-align: left;
+  width: 27vw;
+}
+.textDiv-signUp span {
+  color: #6e6c6c !important;
+  font-size: 1.1em !important;
+  font-weight: bold;
+}
+.textDiv-loginBtn {
+  margin: 0 auto !important;
+  width: 40% !important;
+}
+.textDiv-loginBtn span {
+  color: #930ca5 !important;
+  font-size: 1.1em !important;
+  font-weight: bold;
+}
+.loginCard-socialIcon-Div {
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: grey !important;
+}
+.loginCard-socialIcons {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .loginCardDiv {
+    width: 40vw;
+  }
+  .mini-loginCardDiv {
+    width: 36vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginCardDiv {
+    width: 60vw;
+  }
+  .mini-loginCardDiv {
+    width: 53vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .loginCardDiv {
+    width: 90vw;
+  }
+  .mini-loginCardDiv {
+    width: 81vw;
+  }
+  .textDiv-loginBtn span {
+    font-size: 1em !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .textDiv-loginBtn span {
+    font-size: 12px !important;
+  }
+}
