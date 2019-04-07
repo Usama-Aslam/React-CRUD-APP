@@ -1,0 +1,9 @@
+.textDiv-signUp span {
+  color: white !important;
+  font-size: 1em !important;
+  font-weight: bold;
+}
+.textDiv-signUp {
+  margin: 0 auto !important;
+  width: 40% !important;
+}

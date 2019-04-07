@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import Login from "./screen/Login";
-import SignUp from "./screen/SignUp";
+import { persistor, store } from "./redux/store";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import Router from "./routes/Router";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Login />
-        <SignUp />
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <Router />
+          </PersistGate>
+        </Provider>
       </div>
     );
   }

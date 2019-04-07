@@ -1,0 +1,10 @@
+.card-content {
+  min-height: 100px;
+  max-height: 100px;
+  overflow-x: none;
+  overflow-y: auto;
+}
+
+.card {
+  max-height: 200px !important;
+}

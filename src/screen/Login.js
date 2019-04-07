@@ -11,10 +11,11 @@ export default class Login extends Component {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          flex: 1
+          flex: 1,
+          background: "linear-gradient(180deg, #fff, #353535)"
         }}
       >
-        <LoginCard />
+        <LoginCard {...this.props} />
       </div>
     );
   }

@@ -1,0 +1,9 @@
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNUP_FAIL = "SIGNUP_FAIL";
+export const LOADER = "LOADER";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const SIGNOUT_SUCCESS = "SIGNOUT_SUCCESS";
+export const SIGNOUT_FAIL = "SIGNOUT_FAIL";
+export const UPLOAD_TASK = "UPLOAD_TASK";
+export const FETCH_TASK = "FETCH_TASK";

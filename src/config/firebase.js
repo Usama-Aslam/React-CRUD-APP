@@ -1,3 +1,4 @@
+import * as firebase from "firebase";
 var config = {
   apiKey: "AIzaSyC7EW2fzZmiLykgJqJ0-IoVE8jDWQdONcE",
   authDomain: "react-crud-pk.firebaseapp.com",
@@ -7,3 +8,5 @@ var config = {
   messagingSenderId: "187996600465"
 };
 firebase.initializeApp(config);
+
+export default firebase;

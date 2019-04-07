@@ -57,19 +57,14 @@
   text-align: left;
   width: 27vw;
 }
-.textDiv-signUp span {
-  color: #6e6c6c !important;
-  font-size: 1.1em !important;
-  font-weight: bold;
-}
+
 .textDiv-loginBtn {
   margin: 0 auto !important;
   width: 40% !important;
 }
 .textDiv-loginBtn span {
-  color: #930ca5 !important;
-  font-size: 1.1em !important;
-  font-weight: bold;
+  color: #ffffff !important;
+  font-size: 1em !important;
 }
 .loginCard-socialIcon-Div {
   margin-top: 10px;
