@@ -17,8 +17,8 @@ const Routes = props => {
   // console.log("props", props);
   return (
     <div>
+      {props.authDetail.user && <AppBar {...props} />}
       <BrowserRouter>
-        <AppBar {...props} />
         <Switch>
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={SignUp} />

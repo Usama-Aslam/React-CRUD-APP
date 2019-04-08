@@ -10,6 +10,10 @@ import {
   CardHeader
 } from "@material-ui/core";
 
+import { DeleteForeverOutlined, Edit } from "@material-ui/icons";
+
+import "../../animation.css";
+
 import "./SectionTaskList.css";
 
 export default class SectionTodoList extends Component {
@@ -19,7 +23,8 @@ export default class SectionTodoList extends Component {
       handleEditButton,
       handleText,
       editable,
-      handleUpdateButton
+      handleUpdateButton,
+      handleDeleteButton
     } = this.props;
     return (
       <div style={{ marginTop: 10 }}>
@@ -27,7 +32,7 @@ export default class SectionTodoList extends Component {
           {this.props.data.map((item, index) => {
             return (
               <Grid item xs={12} md={3}>
-                <Card className="card">
+                <Card className={"card"}>
                   <CardContent className="card-content">
                     <Grid container alignItems="flex-end">
                       <Grid item xs={12} md={12} style={{ textAlign: "left" }}>
@@ -46,6 +51,7 @@ export default class SectionTodoList extends Component {
                             width: "100%",
                             height: "100%",
                             minHeight: 90,
+                            resize: "none",
                             fontFamily: "arial"
                           }}
                           value={item.taskData}
@@ -72,6 +78,7 @@ export default class SectionTodoList extends Component {
                               handleEditButton(index);
                             }}
                           >
+                            <Edit style={{ color: "white" }} />
                             <span style={{ color: "white" }}>EDIT</span>
                           </Button>
                         </Grid>
@@ -80,13 +87,15 @@ export default class SectionTodoList extends Component {
                             fullWidth
                             variant="contained"
                             style={{ background: "orange" }}
+                            onClick={() => handleDeleteButton(item, index)}
                           >
+                            <DeleteForeverOutlined style={{ color: "white" }} />
                             <span style={{ color: "white" }}>DELETE</span>
                           </Button>
                         </Grid>
                       </Grid>
                     ) : (
-                      <Grid item xs={6} md={12}>
+                      <Grid item xs={12} md={12}>
                         <Button
                           fullWidth
                           variant="contained"

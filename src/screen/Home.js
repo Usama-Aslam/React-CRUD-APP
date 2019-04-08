@@ -97,8 +97,14 @@ class Home extends Component {
     });
   };
 
+  handleDeleteButton = async (item, index) => {
+    const { uploadAction, authDetail } = this.props;
+    await uploadAction.deleteTask(item.pushID, authDetail.user);
+    console.log(item);
+  };
+
   render() {
-    console.log(this.state.list);
+    // console.log(this.state.list);
     return (
       <div style={{ padding: 10 }}>
         {/* Task Card */}
@@ -113,6 +119,7 @@ class Home extends Component {
           handleText={this.handleText}
           editable={this.state.editable}
           handleUpdateButton={this.handleUpdateButton}
+          handleDeleteButton={this.handleDeleteButton}
         />
       </div>
     );

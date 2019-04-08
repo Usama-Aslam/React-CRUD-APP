@@ -14,7 +14,7 @@ import {
   WarningOutlined
 } from "@material-ui/icons";
 import "./LoginCard.css";
-
+import "../../animation.css"
 import { connect } from "react-redux";
 import * as authActions from "../../redux/action/authAction";
 

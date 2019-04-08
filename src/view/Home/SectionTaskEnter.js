@@ -8,6 +8,7 @@ import {
   CardContent,
   CardHeader
 } from "@material-ui/core";
+import { Add } from "@material-ui/icons";
 
 export default class SectionTaskEnter extends Component {
   render() {
@@ -39,9 +40,13 @@ export default class SectionTaskEnter extends Component {
                     <Button
                       fullWidth
                       variant="contained"
-                      style={{ padding: 15, background: "#63a4d2" }}
+                      style={{
+                        padding: 15,
+                        background: "linear-gradient(60deg, #ab47bc, #8e24aa)"
+                      }}
                       onClick={() => handleAddButton()}
                     >
+                      <Add style={{ color: "white" }} />
                       <span style={{ color: "white" }}>Add</span>
                     </Button>
                   </Grid>

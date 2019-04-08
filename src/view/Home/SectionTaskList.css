@@ -7,4 +7,5 @@
 
 .card {
   max-height: 200px !important;
+  animation:  bounceIn 0.5s linear;
 }

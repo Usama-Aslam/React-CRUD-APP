@@ -18,3 +18,12 @@ export const updateTask = (pushID, task, { user }) => {
       .set(task);
   };
 };
+
+export const deleteTask = (pushID, { user }) => {
+  return async dispatch => {
+    await firebase
+      .database()
+      .ref(`/task/${user.uid}/${pushID}`)
+      .remove();
+  };
+};

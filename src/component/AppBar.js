@@ -31,14 +31,18 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar
-          style={{ background: "white", boxShadow: "1px 1px 10px grey" }}
+          style={{ background: "linear-gradient(60deg, #ab47bc, #8e24aa)" }}
         >
-          <Typography variant="h6" className={classes.grow}>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
             CRUD APP
           </Typography>
 
           {props.authDetail.user ? (
-            <Button onClick={() => props.signOut()}>
+            <Button
+              variant="outlined"
+              color="inherit"
+              onClick={() => props.signOut()}
+            >
               <span>LOG OUT</span>
             </Button>
           ) : (

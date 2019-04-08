@@ -15,6 +15,7 @@ import {
 } from "@material-ui/icons";
 import "../Login/LoginCard.css";
 import "./SignUpCard.css";
+import "../../animation.css";
 
 import * as authActions from "../../redux/action/authAction";
 import { connect } from "react-redux";
