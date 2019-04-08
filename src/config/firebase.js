@@ -1,11 +1,11 @@
 import * as firebase from "firebase";
 var config = {
-  apiKey: "AIzaSyC7EW2fzZmiLykgJqJ0-IoVE8jDWQdONcE",
+  apiKey: "apk-key",
   authDomain: "react-crud-pk.firebaseapp.com",
   databaseURL: "https://react-crud-pk.firebaseio.com",
   projectId: "react-crud-pk",
   storageBucket: "react-crud-pk.appspot.com",
-  messagingSenderId: "187996600465"
+  messagingSenderId: "your-id"
 };
 firebase.initializeApp(config);
 
